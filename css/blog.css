@@ -1,0 +1,291 @@
+:root {
+    --shadow-color: 0deg 0% 72%;
+    --shadow-elevation-low: 0px 0.7px 0.8px hsl(var(--shadow-color) / 0.25), 0px 1px 1.1px -1.2px hsl(var(--shadow-color) / 0.25), 0px 2.4px 2.7px -2.5px hsl(var(--shadow-color) / 0.25);
+    --shadow-elevation-medium: 0px 0.7px 0.8px hsl(var(--shadow-color) / 0.26), 0px 2px 2.3px -0.8px hsl(var(--shadow-color) / 0.26), 0.1px 4.9px 5.5px -1.7px hsl(var(--shadow-color) / 0.26), 0.2px 11.8px 13.3px -2.5px hsl(var(--shadow-color) / 0.26);
+    --shadow-elevation-high: 0px 0.7px 0.8px hsl(var(--shadow-color) / 0.25), 0.1px 3.1px 3.5px -0.4px hsl(var(--shadow-color) / 0.25), 0.1px 5.6px 6.3px -0.7px hsl(var(--shadow-color) / 0.25), 0.2px 9.1px 10.2px -1.1px hsl(var(--shadow-color) / 0.25), 0.2px 14.4px 16.2px -1.4px hsl(var(--shadow-color) / 0.25), 0.4px 22.4px 25.2px -1.8px hsl(var(--shadow-color) / 0.25), 0.6px 34px 38.3px -2.1px hsl(var(--shadow-color) / 0.25), 0.9px 50px 56.3px -2.5px hsl(var(--shadow-color) / 0.25)
+}
+
+.navbar-light {
+    background-color: #f8f9fa
+}
+
+.blog.blog-post div.header {
+    padding-top: 120px
+}
+
+.blog.blog-post div.header .cover-image img {
+    max-width: 100%
+}
+
+.blog.blog-post div.content {
+    padding-bottom: 120px;
+    font-size: 18px;
+    line-height: 200%
+}
+
+.blog.blog-post div.content p, .blog.blog-post div.content li {
+    font-weight: 400
+}
+
+.blog.blog-post div.content p {
+    margin-bottom: 20px
+}
+
+.blog.blog-post div.content li {
+    margin-bottom: 10px
+}
+
+.blog.blog-post div.content h1 {
+    font-size: 150%;
+    margin-top: 60px;
+    margin-bottom: 30px
+}
+
+.blog.blog-post div.content h2 {
+    font-size: 175%;
+    margin-top: 40px;
+    margin-bottom: 20px
+}
+
+.blog.blog-post div.content h2:first-child {
+    font-weight: lighter;
+    color: #171c20
+}
+
+.blog.blog-post div.content h3 {
+    font-size: 150%;
+    margin-top: 50px;
+    margin-bottom: 10px
+}
+
+.blog.blog-post div.content h4 {
+    font-size: 125%;
+    margin-top: 50px;
+    margin-bottom: 10px
+}
+
+.blog.blog-post div.content h5 {
+    color: #5d768d;
+    font-size: 110%;
+    margin-top: 50px;
+    margin-bottom: 10px
+}
+
+.blog.blog-post div.content img {
+    max-width: 100%
+}
+
+.blog.blog-post div.content blockquote {
+    border-width: 0 0 0 3px;
+    border-style: solid;
+    padding: 20px 30px;
+    margin: 40px -30px;
+    background-color: #f8f9fa;
+    font-size: 125%;
+    line-height: 170%
+}
+
+.blog.blog-post div.content blockquote p {
+    margin: 10px 0
+}
+
+.blog.blog-post div.content .infobox {
+    color: #f8f9fa;
+    border-radius: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px
+}
+
+.blog.blog-post div.content .infobox p {
+    margin-bottom: 0px;
+    line-height: 175%;
+    font-size: 16px;
+    max-width: 100%
+}
+
+@media(min-width: 768px) {
+    .blog.blog-post div.content .infobox p {
+        max-width: 80%
+    }
+}
+
+.blog.blog-post div.content .infobox h2, .blog.blog-post div.content .infobox h3, .blog.blog-post div.content .infobox h4 {
+    color: #f8f9fa;
+    margin-top: 0px;
+    margin-bottom: 40px
+}
+
+.blog.blog-post div.content .infobox-fluid {
+    border-radius: 0px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-top: 70px;
+    padding-bottom: 70px
+}
+
+.blog.blog-post div.content .infobox-fluid .row {
+    max-width: 800px;
+    margin: auto
+}
+
+.blog.blog-post div.content table {
+    border-radius: 10px;
+    border-collapse: separate;
+    padding: 20px;
+    margin-bottom: 0px
+}
+
+.blog.blog-post div.content table th {
+    padding: 0px;
+    line-height: 100%;
+    text-transform: none
+}
+
+.blog.blog-post div.content table td {
+    line-height: 175%;
+    font-size: 14px;
+    padding: 0px
+}
+
+.blog.color-scheme-green-light h2, .blog.color-scheme-green-light h3 {
+    color: #29c273
+}
+
+.blog.color-scheme-green-light table {
+    background-color: #fff;
+    color: #29c273
+}
+
+.blog.color-scheme-green-light table th {
+    color: #eefcf5
+}
+
+.blog.color-scheme-green-light .infobox {
+    background-color: #29c273
+}
+
+.blog.color-scheme-green-light a:not(.btn) {
+    color: #176e41
+}
+
+.blog.color-scheme-green-light blockquote {
+    border-color: #29c273
+}
+
+.blog.color-scheme-yellow h2, .blog.color-scheme-yellow h3 {
+    color: #faab19
+}
+
+.blog.color-scheme-yellow table {
+    background-color: #fff;
+    color: #faab19
+}
+
+.blog.color-scheme-yellow table th {
+    color: #fff
+}
+
+.blog.color-scheme-yellow .infobox {
+    background-color: #faab19
+}
+
+.blog.color-scheme-yellow a:not(.btn) {
+    color: #a96f04
+}
+
+.blog.color-scheme-yellow blockquote {
+    border-color: #faab19
+}
+
+.blog.color-scheme-purple h2, .blog.color-scheme-purple h3, .blog.color-scheme-purple a:not(.btn) {
+    color: #5948df
+}
+
+.blog.color-scheme-purple table {
+    background-color: #fff;
+    color: #5948df
+}
+
+.blog.color-scheme-purple table th {
+    color: #fff
+}
+
+.blog.color-scheme-purple .infobox {
+    background-color: #5948df
+}
+
+.blog.color-scheme-purple blockquote {
+    border-color: #5948df
+}
+
+.blog.color-scheme-red h2, .blog.color-scheme-red h3, .blog.color-scheme-red a:not(.btn) {
+    color: #ee5253
+}
+
+.blog.color-scheme-red table {
+    background-color: #fff;
+    color: #ee5253
+}
+
+.blog.color-scheme-red table th {
+    color: #fff
+}
+
+.blog.color-scheme-red .infobox {
+    background-color: #ee5253
+}
+
+.blog.color-scheme-red blockquote {
+    border-color: #ee5253
+}
+
+.blog.color-scheme-enterprise h2, .blog.color-scheme-enterprise h3, .blog.color-scheme-enterprise a:not(.btn) {
+    color: #332158
+}
+
+.blog.color-scheme-enterprise table {
+    background-color: #ded5ef;
+    color: #332158
+}
+
+.blog.color-scheme-enterprise table th {
+    color: #b19eda
+}
+
+.blog.color-scheme-enterprise .infobox {
+    background-color: #332158
+}
+
+.blog.color-scheme-enterprise blockquote {
+    border-color: #332158
+}
+
+.blog.color-scheme-teal h2, .blog.color-scheme-teal h3, .blog.color-scheme-teal a:not(.btn) {
+    color: #00cec9
+}
+
+.blog.color-scheme-teal blockquote {
+    border-color: #00cec9
+}
+
+.blog-list .post-card {
+    height: 430px
+}
+
+.blog-list .post-card h3 {
+    line-height: 110%
+}
+
+.blog-list .post-card .cover-image {
+    min-height: 200px;
+    background-position: center center;
+    background-size: cover;
+    -webkit-transition: all .15s ease-out;
+    transition: all .15s ease-out
+}
