@@ -8,8 +8,23 @@ class Qrcode extends Controller{
         $data = base64_decode($_REQUEST['data']);
         $data = explode("_", $data);
         $this->view->type = $data[1];
-        $this->view->jsonObj = $this->model->get_detail_proof($data[0]);
         $this->view->render('qrcode/index');
+    }
+
+    function proof(){
+        $data = base64_decode($_REQUEST['data']);
+        $data = explode("_", $data);
+        $this->view->type = $data[1];
+        $this->view->jsonObj = $this->model->get_detail_proof($data[0]);
+        $this->view->render('qrcode/proof');
+    }
+
+    function works(){
+        $data = base64_decode($_REQUEST['data']);
+        $data = explode("_", $data);
+        $this->view->type = $data[1];
+        $this->view->jsonObj = $this->model->get_detail_works($data[0]);
+        $this->view->render('qrcode/works');
     }
 }
 ?>
