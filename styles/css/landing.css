@@ -28,7 +28,7 @@ body.homepage header .logo {
 }
 
 body.homepage div.banner-1 {
-    background-color: #fff;
+    /*background-color: #fff;*/
     background-repeat: no-repeat;
     background-position: center top
 }

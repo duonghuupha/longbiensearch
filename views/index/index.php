@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="<?php echo URL.'/styles/' ?>css/carbon_ads.css">
     <link rel="stylesheet" href="<?php echo URL.'/styles/' ?>css/landing.css">
     <link rel="stylesheet" href="<?php echo URL.'/styles/' ?>css/blog.css">
+    <link rel="stylesheet" href="<?php echo URL.'/styles/' ?>css/jquery.toast.css">
+    <script src="<?php echo URL ?>/styles/js/jquery-1.10.2.min.js"></script>
+    <script src="<?php echo URL ?>/styles/js/jquery.toast.js"></script>
     <script>
         var baseUrl = '<?php echo URL ?>';
     </script>
@@ -18,7 +21,7 @@
 <body class="homepage preview-white">
     <nav class="navbar navbar-expand-lg navbar-light bg-white ">
         <div class="collapse navbar-collapse" id="mainNavigation">
-            <a href="javascript:void(0)" class="px-2 homepage-menu">
+            <a href="<?php echo URL ?>" class="px-2 homepage-menu">
                 <img src="<?php echo URL.'/styles/' ?>img/Logo.png" width="168" height="28" class="d-inline-block align-top" 
                 alt="Kênh tra cứu thông tin của trường THCS Long Biên">
             </a>
@@ -37,11 +40,11 @@
                                 <p class="lead text-dark mb-4 opacity-70">
                                     Trường THCS Long Biên luôn mang đến điều tốt nhất tới học sinh, hãy cùng khám phá
                                 </p>
-                                <form method="post" class="search-form form-autocomplete focus">
+                                <div class="search-form form-autocomplete focus">
                                     <div class="input-group input-group-lg">
                                         <input id="search-input" class="form-control border-0 autocomplete" type="text"
                                         name="q" placeholder="Tìm văn bản, sách điện tử và nhiều hơn nữa...."
-                                        value="" autocomplete="off" maxlength="256" onchange="search()">
+                                        value="" autocomplete="off" onchange="search()">
                                         <div class="input-group-append">
                                             <button type="button" class="btn btn-submit" onclick="search()">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" 
@@ -53,7 +56,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -61,15 +64,20 @@
             </div>
         </div>
     </header>
-    <script src="js/jquery-1.10.2.min.js"></script>
     <script>
         function search(){
             var value = $('#search-input').val();
             if(value.length == 0){
-
+                $.toast({
+                    heading: 'Thông báo',
+                    text: "Hãy nhập nội dung tìm kiếm",
+                    showHideTransition: 'fade',
+                    icon: 'warning',
+                    position: 'top-right'
+                });
             }else{
                 var keyword = value.replaceAll(" ", "+", 'g');
-                window.location.href = baseUrl + '/result?q='+keyword;
+                window.location.href = baseUrl + '/result?page=1&q='+keyword;
             }
         }
     </script>
