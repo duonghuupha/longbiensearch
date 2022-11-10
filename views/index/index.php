@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="<?php echo URL.'/styles/' ?>css/jquery.toast.css">
     <script src="<?php echo URL ?>/styles/js/jquery-1.10.2.min.js"></script>
     <script src="<?php echo URL ?>/styles/js/jquery.toast.js"></script>
+    <link rel="shortcut icon" href="<?php echo URL ?>/styles/img/Logo1.png" />
     <script>
         var baseUrl = '<?php echo URL ?>';
     </script>

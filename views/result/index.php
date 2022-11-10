@@ -7,6 +7,7 @@
     <link href="<?php echo URL.'/styles/'; ?>css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo URL.'/styles/'; ?>css/result.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo URL.'/styles/' ?>css/jquery.toast.css">
+    <link rel="shortcut icon" href="<?php echo URL ?>/styles/img/Logo1.png" />
     <script>
         var baseUrl = '<?php echo URL ?>';
     </script>

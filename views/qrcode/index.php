@@ -8,6 +8,7 @@
     <link href="<?php echo URL.'/styles/'; ?>css/result.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo URL.'/styles/' ?>css/jquery.toast.css">
     <script src="<?php echo URL.'/styles/'; ?>js/jquery-1.10.2.min.js"></script>
+    <link rel="shortcut icon" href="<?php echo URL ?>/styles/img/Logo1.png" />
     <script>
         var baseUrl = '<?php echo URL ?>';
         var type = <?php echo $this->type ?>;
@@ -60,6 +61,12 @@
                                                     $('#noidung').load(baseUrl + '/qrcode/proof?data=<?php echo $_REQUEST['data'] ?>')
                                                 }else if(type == 2){
                                                     $('#noidung').load(baseUrl + '/qrcode/works?data=<?php echo $_REQUEST['data'] ?>')
+                                                }else if(type == 3){
+                                                    $('#noidung').load(baseUrl + '/qrcode/document_in?data=<?php echo $_REQUEST['data'] ?>')
+                                                }else if(type == 4){
+                                                    $('#noidung').load(baseUrl + '/qrcode/document_out?data=<?php echo $_REQUEST['data'] ?>')
+                                                }else if(type == 5){
+                                                    $('#noidung').load(baseUrl + '/qrcode/library?data=<?php echo $_REQUEST['data'] ?>')
                                                 }
                                             });
                                         </script>
